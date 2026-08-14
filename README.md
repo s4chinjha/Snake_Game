@@ -4,6 +4,12 @@ A classic Snake Game built using **Java Swing and AWT**, featuring keyboard cont
 
 The game is also packaged as a **Java JAR** and deployed to the web using **CheerpJ**, allowing the Java application to run directly in a modern web browser.
 
+## 🌐 Play Online
+
+**[▶️ Play Snake Game](https://s4chinjha.github.io/Snake_Game/)**
+
+No Java installation is required to play the browser version.
+
 ## 🎮 Features
 
 - Classic Snake gameplay
@@ -56,14 +62,6 @@ Run the game:
 java -cp build/classes SnakeGame
 ```
 
-## 🌐 Play Online
-
-The Java game is also available to play directly in the browser:
-
-**[Play Snake Game](https://s4chinjha.github.io/Snake_Game/)**
-
-The browser version uses **CheerpJ** to execute the Java JAR without requiring Java to be installed locally.
-
 ## 🎯 Controls
 
 | Key | Action                  |
@@ -111,7 +109,7 @@ Java Swing Game
  GitHub Pages
 ```
 
-## 💡 What I Learned
+## 💡 What I Built & Learned
 
 * Java Swing and AWT application development
 * Game loops and rendering
@@ -121,14 +119,6 @@ Java Swing Game
 * JAR packaging
 * Running Java applications in the browser using CheerpJ
 * GitHub Actions and GitHub Pages deployment
-
-## 📚 Reference
-
-This project was originally developed with guidance from:
-
-* [Java Snake Game - Bro Code](https://www.youtube.com/watch?v=bI6e6qjJ8JQ)
-
-The project was subsequently extended with browser deployment and automated GitHub Pages deployment.
 
 ## 📌 Future Improvements
 
