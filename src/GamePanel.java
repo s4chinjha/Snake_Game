@@ -3,7 +3,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 import javax.sound.sampled.*;
-import java.io.File;
 
 public class GamePanel extends JPanel implements ActionListener {
     //setting screen w x h
@@ -196,8 +195,10 @@ public class GamePanel extends JPanel implements ActionListener {
     public void playEatSound() {
     // Attribution: Apple_Crunch_16.wav by Koops -- https://freesound.org/s/20279/ -- License: Attribution 4.0
     try {
-        File soundFile = new File("Snake/res/sounds/appleEaten.wav");
-        AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+        AudioInputStream audioIn =
+            AudioSystem.getAudioInputStream(
+                    getClass().getResource("/sounds/appleEaten.wav")
+            );
         Clip clip = AudioSystem.getClip();
         clip.open(audioIn);
         //Listen and stop when done

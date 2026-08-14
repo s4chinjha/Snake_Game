@@ -1,0 +1,8 @@
+# Java / IntelliJ
+*.class
+out/
+.idea/
+*.iml
+
+# Build output
+build/
