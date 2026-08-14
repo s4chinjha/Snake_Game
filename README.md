@@ -1,7 +1,8 @@
 # 🐍 Snake Game in Java
 
-A classic Snake Game developed using Java.  
-This project demonstrates fundamental game development concepts such as game loops, keyboard input handling, collision detection, score tracking, and object-oriented programming.
+A classic Snake Game built using **Java Swing and AWT**, featuring keyboard controls, real-time game updates, collision detection, scoring, restart functionality, and sound effects.
+
+The game is also packaged as a **Java JAR** and deployed to the web using **CheerpJ**, allowing the Java application to run directly in a modern web browser.
 
 ## 🎮 Features
 
@@ -9,90 +10,134 @@ This project demonstrates fundamental game development concepts such as game loo
 - Smooth snake movement
 - Food spawning system
 - Score tracking
-- Collision detection
+- Snake growth
+- Wall and self-collision detection
 - Game Over screen
-- Simple and clean user interface
+- Restart functionality
+- Apple-eating sound effect
+- Browser-based version using CheerpJ
+- Automatic deployment using GitHub Actions
 
 ## 🛠️ Tech Stack
 
-- Java
+- Java 17
 - Java Swing
 - Java AWT
+- CheerpJ
+- GitHub Pages
+- GitHub Actions
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure you have the following installed:
-
-- Java JDK 8 or above
-- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, etc.)
+- Java JDK 17+
+- Any Java IDE or terminal
 
 ## 📥 Clone the Repository
 
 ```bash
 git clone https://github.com/s4chinjha/Snake_Game.git
-```
+cd Snake_Game
+````
 
-## ▶️ Run the Project
+## ▶️ Run Locally
 
-### Using Terminal
+Compile the source files:
 
 ```bash
-javac Main.java
-java Main
+mkdir -p build/classes
+javac -d build/classes src/*.java
 ```
 
-### Using an IDE
+Run the game:
 
-1. Open the project in your preferred IDE
-2. Compile and run the main Java file
+```bash
+java -cp build/classes SnakeGame
+```
+
+## 🌐 Play Online
+
+The Java game is also available to play directly in the browser:
+
+**[Play Snake Game](https://s4chinjha.github.io/Snake_Game/)**
+
+The browser version uses **CheerpJ** to execute the Java JAR without requiring Java to be installed locally.
 
 ## 🎯 Controls
 
-| Key | Action |
-|------|--------|
-| ↑ | Move Up |
-| ↓ | Move Down |
-| ← | Move Left |
-| → | Move Right |
+| Key | Action                  |
+| --- | ----------------------- |
+| ↑   | Move Up                 |
+| ↓   | Move Down               |
+| ←   | Move Left               |
+| →   | Move Right              |
+| R   | Restart after Game Over |
+
+## 📁 Project Structure
+
+```text
+Snake_Game/
+├── src/
+│   ├── SnakeGame.java
+│   ├── GameFrame.java
+│   └── GamePanel.java
+├── res/
+│   └── sounds/
+│       └── appleEaten.wav
+├── web/
+│   ├── index.html
+│   └── SnakeGame.jar
+└── .github/
+    └── workflows/
+        └── deploy.yml
+```
+
+## 🚀 Deployment
+
+The web version is automatically deployed to **GitHub Pages** using **GitHub Actions**.
+
+```text
+Java Swing Game
+      ↓
+   Java 17
+      ↓
+   JAR File
+      ↓
+    CheerpJ
+      ↓
+    Browser
+      ↓
+ GitHub Pages
+```
 
 ## 💡 What I Learned
 
-Through this project, I learned:
-
-- Java game development basics
-- Working with Java Swing and AWT
-- Handling keyboard events
-- Collision detection logic
-- Game loops and rendering
-- Object-oriented programming concepts
+* Java Swing and AWT application development
+* Game loops and rendering
+* Keyboard event handling
+* Collision detection
+* Java resource management
+* JAR packaging
+* Running Java applications in the browser using CheerpJ
+* GitHub Actions and GitHub Pages deployment
 
 ## 📚 Reference
 
-This project was developed with guidance and inspiration from the following tutorial:
+This project was originally developed with guidance from:
 
-- [Java Snake Game 🐍 - Bro Code](https://www.youtube.com/watch?v=bI6e6qjJ8JQ)
+* [Java Snake Game - Bro Code](https://www.youtube.com/watch?v=bI6e6qjJ8JQ)
 
-Special thanks to Bro Code for the beginner-friendly Java tutorial.
+The project was subsequently extended with browser deployment and automated GitHub Pages deployment.
 
 ## 📌 Future Improvements
 
-- Add sound effects
-- Add difficulty levels
-- Add pause/resume functionality
-- Store high scores
-- Better graphics and animations
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-Feel free to fork the repository and submit pull requests.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+* Fullscreen browser mode
+* Difficulty levels
+* Pause/resume functionality
+* High-score persistence
+* Improved graphics and animations
 
 ---
 
-Made with ❤️ by Sachin Kumar Jha
+Made with ❤️ by **Sachin Kumar Jha**
